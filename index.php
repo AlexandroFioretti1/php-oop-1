@@ -65,11 +65,16 @@ $movies = [
     <div class="container ">
         <div class="row">
             <?php foreach ($movies as $movie) : ?>
-                <div class="col-4">
-                    <div class="card">
+                <div class="col-4 my-4 text-center">
+                    <div class="card gap-1">
                         <h5><?php echo ($movie->Titolo) ?></h5>
-
-
+                        <br>
+                        <span><?php echo ($movie->Anno) ?></span>
+                        <br>
+                        <span><?php echo ($movie->Genere) ?></span>
+                        <br>  
+                        <span><?php echo ($movie->Regista) ?></span>
+                        <br>
                     </div>
                 </div>
             <?php endforeach ?>
